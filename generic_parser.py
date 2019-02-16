@@ -34,5 +34,13 @@ print("hello")
 # for housing.data use sep=s+
 data = pd.read_csv(my_csv_file,sep='\s+|,',header=None)
 print(data.head())
-
 print (data.shape)
+
+print(data.iloc[3:5,:])
+print()
+print(data.iloc[:3,-3:])
+
+import numpy as np
+
+print(np.mean(data))
+
